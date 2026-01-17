@@ -1,0 +1,18 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        cpy=x
+        rev=0
+        if(x<0 ):
+            return False
+        while(cpy>0 ):
+            rev=rev*10+cpy%10
+            cpy=cpy//10
+        if x== rev :
+            return True
+        else:
+            return False
+        """
+        :type x: int
+        :rtype: bool
+        """
+        
